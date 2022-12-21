@@ -65,18 +65,20 @@
     <section class="hero">
         <div class="conteiner"> 
             <h1 class="hero-title">Ефективні рішення для <br >вашого бізнесу</h1>
-            <button type="button" class="hero-button">Замовити послугу</button>
+            <button data-modal-open type="button" class="hero-button">Замовити послугу</button>
         </div>
         
     </section>
 
      <!--Модальное окно-->
 
-     <div class="backdrop">
+     <div class="backdrop" data-modal>
         <div class="modal">
+            <button data-modal-close class="modal-button" type="button">
             <svg class="modal-cross" width="30" height="30">
-                <use href="./images/cross.svg"></use>
+                <use href="./images/cross-close.svg#cross-close"></use>
             </svg>
+            </button>
 
         </div>
 
@@ -471,6 +473,8 @@
 
 
     </footer>
+    
+    <script src="./js/modal.js"></script>
  
 </body>
 
